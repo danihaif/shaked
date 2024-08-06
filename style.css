@@ -6,6 +6,7 @@ body {
     /* Violet background color */
     color: #f4f4f9;
     /* Light color for text */
+    direction: rtl;
 }
 
 .header-container {
@@ -27,7 +28,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav ul li a {
