@@ -12,18 +12,21 @@ body {
 
 .header-container {
     background-color: #5c4b8a;
-    /* Darker violet */
     color: white;
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 20px;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
+    max-width: 1200px;
+    /* Adjust as needed */
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hamburger {
