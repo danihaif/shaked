@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #7d5ba6;
@@ -14,16 +14,20 @@ body {
     /* Darker violet */
     color: white;
     padding: 10px 0;
+    text-align: center;
 }
 
 .header-container h1 {
     margin: 0;
     padding: 0 20px;
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
@@ -34,6 +38,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-family: 'Verdana', sans-serif;
 }
 
 .container {
@@ -47,7 +52,7 @@ nav ul li a {
 }
 
 .intro-section {
-    background: url('https://via.placeholder.com/800x400.png?text=Music+Therapy+Background') no-repeat center center;
+    background: url('/mnt/data/An_800x400_image_of_a_professional_music_therapy_s.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -61,23 +66,33 @@ nav ul li a {
     font-size: 1.2em;
 }
 
-form {
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form {
     background-color: #5c4b8a;
     padding: 20px;
     border-radius: 8px;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 0.9em;
 }
 
-form label,
-form input,
-form textarea {
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
     display: block;
     width: 100%;
     margin-bottom: 10px;
     color: white;
+    font-family: 'Verdana', sans-serif;
 }
 
-form input,
-form textarea {
+.contact-form input,
+.contact-form textarea {
     background-color: #7d5ba6;
     border: none;
     padding: 10px;
@@ -85,7 +100,26 @@ form textarea {
     color: white;
 }
 
-form input[type="submit"] {
+.contact-form input[type="submit"] {
     background-color: #9b6ab9;
     cursor: pointer;
+}
+
+.whatsapp-contact {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-contact p {
+    font-size: 1.2em;
+}
+
+.whatsapp-contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #25D366;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: inline-block;
 }
