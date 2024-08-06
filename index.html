@@ -4,104 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Gal</title>
+    <title>Music Therapy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="script.js" defer></script>
-    <link rel="shortcut icon" href="/daniel.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://via.placeholder.com/16x16.png?text=M" type="image/x-icon">
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Daniel Gal - Software Engineer">
+    <meta property="og:title" content="Music Therapy">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://danihaif.com">
-    <meta property="og:image" content="daniel.webp">
+    <meta property="og:url" content="https://shakedlaugomer.com">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Music+Therapy">
     <meta property="og:description"
-        content="Experienced Software Engineer specializing in cross-platform C++ applications, Python development, and networking across Linux, Windows, and Mac environments.">
+        content="Discover the healing power of music with our specialized music therapy services.">
+
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <div class="container header-container">
-            <h1>Daniel Gal</h1>
+        <div class="container header-container fade-in">
+            <h1>Music Therapy</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="CV_DanielGal.pdf" target="_blank">CV</a></li>
-                    <li><a href="blog.html">Blog</a></li> <!-- Add this line -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section id="home" class="intro-section">
+        <section id="home" class="intro-section fade-in">
             <div class="container">
-                <h2>Contact</h2>
+                <h2>Welcome to Music Therapy</h2>
+                <p>Experience the transformative power of music therapy.</p>
+                <img src="https://via.placeholder.com/800x400.png?text=Music+Therapy" alt="Music Therapy"
+                    style="width: 100%;">
+            </div>
+        </section>
+        <section id="about" class="section fade-in">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing therapeutic services through music, helping individuals find peace and
+                    healing.</p>
+                <img src="https://via.placeholder.com/800x400.png?text=About+Us" alt="About Us" style="width: 100%;">
+            </div>
+        </section>
+        <section id="services" class="section fade-in">
+            <div class="container">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Individual Music Therapy Sessions</li>
+                    <li>Group Music Therapy Sessions</li>
+                    <li>Workshops and Seminars</li>
+                    <li>Custom Therapy Plans</li>
+                </ul>
+                <img src="https://via.placeholder.com/800x400.png?text=Services" alt="Services" style="width: 100%;">
+            </div>
+        </section>
+        <section id="contact" class="section fade-in">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us to learn more about our services or to schedule a session.</p>
                 <p><i class="fas fa-phone"></i> +972524370391</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:danihaif@gmail.com">danihaif@gmail.com</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:shaklaug@gmail.com">shaklaug@gmail.com</a></p>
                 <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/danihaif/"
                         target="_blank">LinkedIn</a></p>
                 <p><i class="fab fa-github"></i> <a href="https://github.com/danihaif" target="_blank">GitHub</a></p>
             </div>
         </section>
-        <section id="summary" class="section">
+        <section id="education" class="section fade-in">
             <div class="container">
-                <h2>Summary</h2>
-                <p>SHAKED</p>
-            </div>
-        </section>
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Key Skills</h2>
-                <ul>
-                    <li>C++17, Python, TypeScript, Java</li>
-                    <li>Cross-Platform Development (Linux/Windows/Mac)</li>
-                    <li>Networking, Software Design, Backend Development</li>
-                    <li>Media streaming - WebRTC, Gstreamer</li>
-                    <li>Kafka, ZMQ</li>
-                    <li>Git, Jenkins, Jira</li>
-                    <li>AWS, Docker</li>
-                    <li>MongoDB, SQLite, Redis</li>
-                    <li>TDD, BDD</li>
-                    <li>Object Oriented Programming</li>
-                    <li>Event-Driven and Multithreading programming</li>
-                    <li>Wireshark</li>
-                </ul>
-            </div>
-        </section>
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Experience</h2>
-                <!-- Experience Entry 1 -->
-                <p><strong>Software Engineer</strong> at Ottopia (June 2023 - Present)</p>
-                <ul>
-                    <li>Significantly improved system efficiency and pioneered cloud deployment on AWS.</li>
-                    <li>Implemented key services using WebRTC, Gstreamer, Kafka, and ZMQ.</li>
-                </ul>
-                <!-- Experience Entry 2 -->
-                <p><strong>Tech Lead • Waves Audio • Integration with Avid</strong> (August 2021 - June 2023)</p>
-                <ul>
-                    <li>Led a major integration project, enhancing collaboration across multiple departments.</li>
-                </ul>
-                <!-- Experience Entry 3 -->
-                <p><strong>Backend and Infrastructure Software Engineer</strong> at Waves Audio (November 2017 – August
-                    2021)</p>
-                <ul>
-                    <li>Advanced C++17 development for professional audio applications and automation infrastructure.
-                    </li>
-                </ul>
-                <!-- Experience Entry 4 -->
-                <p><strong>Lecturer • Programming & Innovation in Music</strong> at Rimon School of Music (October 2020
-                    – August 2022)</p>
-                <ul>
-                    <li>Designed courses integrating Computer Science with music, using Python.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education</h2>
-                <p>B.Sc. in Computer Science from Ben-Gurion University.</p>
+                <h2>Our Expertise</h2>
+                <p>Our team comprises certified music therapists with extensive experience in various therapeutic
+                    settings.</p>
+                <img src="https://via.placeholder.com/800x400.png?text=Expertise" alt="Expertise" style="width: 100%;">
             </div>
         </section>
     </main>

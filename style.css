@@ -1,212 +1,61 @@
-:root {
-    --primary-color: #e9f3ed; /* Example Primary Color */
-    --text-color: #000000; /* Example Text Color */
-    --background-color: #c9e2f3; /* Example Background Color */
-}
-
-
-html, body {
-    height: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-h1, h2, h3, p, ul, li {
-    margin: 0 0 2px 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Example Font */
-}
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7d5ba6;
+    /* Violet background color */
+    color: #f4f4f9;
+    /* Light color for text */
 }
 
-.container {
-    max-width: 1100px;
-    margin: auto;
-    overflow: hidden;
+.header-container {
+    background-color: #5c4b8a;
+    /* Darker violet */
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container h1 {
+    margin: 0;
     padding: 0 20px;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    margin: 0 15px;
-}
-
-header li {
-    display: inline;
-    padding: 0 15px;
-}
-
-.main {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
-.intro-section, .skills-section, .experience-section {
-    margin-bottom: 20px;
+nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Animation */
-.fadeIn {
-    animation: fadeInAnimation ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Responsiveness */
-@media (max-width: 700px) {
-    .main {
-        flex-direction: column;
-    }
-
-    nav ul, header {
-        text-align: center;
-    }
-
-    nav ul {
-        padding: 0;
-    }
-}
-
-
-.click-circle {
-    position: fixed;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 150, 255, 0.7);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: growFade 1s ease forwards;
-}
-
-@keyframes growFade {
-    from {
-        width: 0;
-        height: 0;
-        opacity: 1;
-    }
-    to {
-        width: 100px;
-        height: 100px;
-        opacity: 0;
-    }
-}
-
-.blog-post {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.blog-post.even {
-    background-color: #d1e3f8; /* Light gray for even posts */
-}
-
-.blog-post.odd {
-    background-color: #dff7ff; /* Slightly darker gray for odd posts */
-}
-
-.post-title {
-    font-size: 24px; /* Slightly larger font for the title */
-}
-
-.post-description {
-    font-size: 16px; /* Standard text size */
-}
-
-.post-date {
-    font-size: 14px; /* Slightly smaller font for the date */
-    text-align: right;
-    margin-top: 10px;
-}
-
-
-/* Existing blog post styles and others... */
-
-.blog-heading {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 28px;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
 .container {
-    margin-top: 40px; /* Adds space at the top of the first blog post */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
 
-.blog-post {
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
-    background-color: #f0f0f0; /* Light gray background for contrast */
+.section {
+    padding: 50px 0;
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
-    .blog-post {
-        margin: 20px 10px; /* Adjusts spacing for smaller screens */
-    }
-
-    .post-title, .post-description, .post-date {
-        text-align: left; /* Ensures text aligns nicely on smaller screens */
-    }
+.intro-section {
+    background: url('https://via.placeholder.com/800x400.png?text=Music+Therapy+Background') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
 }
 
-.back-to-home {
-    display: inline-flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center align items */
-    justify-content: center; /* Horizontally center content */
-    margin: 20px;
-    padding: 8px 16px; /* Reduced padding for a smaller button */
-    background-color: #a0d2eb; /* Lighter shade of blue */
-    color: #2d3033; /* Keeping text color white for contrast */
-    text-decoration: none; /* Remove underline */
-    border-radius: 4px; /* Slightly less rounded corners */
-    font-size: 14px; /* Smaller font size for a more subdued appearance */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+.intro-section h2 {
+    font-size: 2.5em;
 }
 
-.back-to-home i {
-    margin-right: 5px; /* Reduced space between the icon and text for a tighter look */
-    font-size: 16px; /* Adjust icon size to match the text */
-}
-
-.back-to-home:hover {
-    background-color: #89c2d9; /* A slightly darker shade on hover for subtle interaction feedback */
+.intro-section p {
+    font-size: 1.2em;
 }
