@@ -2,10 +2,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #7d5ba6, #4b0082, #8a2be2, #dda0dd);
+    background: linear-gradient(135deg, rgb(61, 75, 76), rgb(180, 187, 179), rgb(228, 197, 182), rgb(140, 117, 71));
     background-size: 400% 400%;
     animation: gradientBackground 15s ease infinite;
-    color: #f4f4f9;
+    color: rgb(61, 75, 76);
     direction: rtl;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -26,7 +26,7 @@ body {
 }
 
 .header-container {
-    background-color: rgba(92, 75, 138, 0.9);
+    background-color: rgba(119, 67, 50, 0.9);
     color: white;
     height: 50px;
     display: flex;
@@ -51,7 +51,7 @@ body {
     top: 5px;
     right: 20px;
     z-index: 1001;
-    background-color: rgba(92, 75, 138, 0.9);
+    background-color: rgba(119, 67, 50, 0.9);
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -76,7 +76,7 @@ nav {
     top: 50px;
     right: -250px;
     width: 250px;
-    background-color: rgba(92, 75, 138, 0.9);
+    background-color: rgba(119, 67, 50, 0.9);
     transition: right 0.3s ease;
     z-index: 1000;
 }
@@ -105,7 +105,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #dda0dd;
+    color: rgb(228, 197, 182);
 }
 
 .container {
@@ -120,7 +120,7 @@ nav ul li a:hover {
 }
 
 .intro-section {
-    background-color: rgba(125, 91, 166, 0.7);
+    background-color: rgba(166, 122, 102, 0.7);
     color: white;
     text-align: center;
     margin-top: 70px;
@@ -177,8 +177,8 @@ nav ul li a:hover {
 
 /* White sections for variety */
 .white-section {
-    background-color: rgb(249, 215, 252);
-    color: #333;
+    background-color: rgba(228, 197, 182, 0.2);
+    color: rgb(61, 75, 76);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -248,20 +248,23 @@ nav ul li a:hover {
 .whatsapp-button {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
 }
 
 .email-button {
-    background-color: #5c4b8a;
+    background-color: rgb(61, 75, 76);
 }
 
 .email-button:hover {
-    background-color: #4a3a6e;
+    background-color: rgb(80, 164, 236);
     transform: scale(1.05);
 }
 
@@ -283,6 +286,12 @@ nav ul li a:hover {
 @media (min-width: 768px) {
     .contact-methods {
         flex-direction: row;
+        justify-content: center;
+    }
+
+    .email-button,
+    .whatsapp-button {
+        width: auto;
     }
 }
 
