@@ -3,9 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #7d5ba6;
-    /* Violet background color */
     color: #f4f4f9;
-    /* Light color for text */
     direction: rtl;
     overflow-x: hidden;
 }
@@ -24,7 +22,6 @@ body {
     transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
-    /* Adjust as needed */
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -33,15 +30,11 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: white;
-    /* Make the icon white for better visibility */
     position: fixed;
     top: 5px;
-    /* Adjust positioning if needed */
     right: 20px;
-    /* Adjust positioning if needed */
     z-index: 1001;
     background-color: #5c4b8a;
-    /* Match the header background */
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -63,11 +56,9 @@ body {
 
 nav {
     position: fixed;
-    top: 30px;
+    top: 50px;
     right: -250px;
-    /* Initially hide off-screen */
     width: 250px;
-    /* Adjust as needed */
     background-color: #5c4b8a;
     transition: right 0.3s ease;
     z-index: 1000;
@@ -110,7 +101,6 @@ nav ul li a {
     color: white;
     text-align: center;
     margin-top: 70px;
-    /* Add margin to avoid overlap */
 }
 
 .intro-section h2 {
@@ -140,10 +130,18 @@ nav ul li a {
     display: inline-block;
 }
 
+.header-container h1 {
+    margin: 0;
+    padding: 0 20px;
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-container {
         padding: 0 10px;
+        height: 50px;
     }
 
     .container {
@@ -164,5 +162,11 @@ nav ul li a {
 
     nav ul li {
         padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h1 {
+        font-size: 1.5em;
     }
 }
