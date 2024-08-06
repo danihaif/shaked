@@ -183,20 +183,23 @@ nav ul li a {
     }
 }
 
+/* Responsive Design for Contact Section */
 .contact-container {
     text-align: center;
+    padding: 20px;
 }
 
 .contact-methods {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 .email-button,
 .whatsapp-button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 10px 20px;
     border-radius: 5px;
@@ -222,18 +225,26 @@ nav ul li a {
     background-color: #1ebc57;
 }
 
-.whatsapp-button i {
-    margin-right: 10px;
-}
-
+.whatsapp-button i,
 .email-button i {
     margin-right: 10px;
 }
 
-/* Responsive Design */
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .contact-methods {
+        flex-direction: row;
+    }
+}
+
 @media (max-width: 400px) {
     .contact-methods {
-        flex-direction: column;
         gap: 10px;
+    }
+
+    .email-button,
+    .whatsapp-button {
+        width: 100%;
+        justify-content: center;
     }
 }
