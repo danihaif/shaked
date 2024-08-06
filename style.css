@@ -165,8 +165,20 @@ nav ul li a {
     }
 }
 
+@media (max-width: 600px) {
+    .header-container h1 {
+        font-size: 2em;
+    }
+}
+
 @media (max-width: 480px) {
     .header-container h1 {
         font-size: 1.5em;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-container h1 {
+        font-size: 1.2em;
     }
 }
