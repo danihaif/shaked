@@ -52,7 +52,6 @@ nav ul li a {
 }
 
 .intro-section {
-    background: url('/mnt/data/An_800x400_image_of_a_professional_music_therapy_s.png') no-repeat center center;
     background-size: cover;
     color: white;
     text-align: center;
@@ -64,45 +63,6 @@ nav ul li a {
 
 .intro-section p {
     font-size: 1.2em;
-}
-
-.contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.contact-form {
-    background-color: #5c4b8a;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    margin: 0 auto;
-    font-size: 0.9em;
-}
-
-.contact-form label,
-.contact-form input,
-.contact-form textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-    color: white;
-    font-family: 'Verdana', sans-serif;
-}
-
-.contact-form input,
-.contact-form textarea {
-    background-color: #7d5ba6;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    color: white;
-}
-
-.contact-form input[type="submit"] {
-    background-color: #9b6ab9;
-    cursor: pointer;
 }
 
 .whatsapp-contact {
