@@ -306,3 +306,56 @@ nav ul li a:hover {
         justify-content: center;
     }
 }
+
+h2 {
+    text-align: center;
+}
+
+.about-content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: rgb(61, 75, 76);
+    text-align: center;
+    /* Center the text */
+}
+
+.about-content p:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.about-content img.round-image {
+    margin-bottom: 20px;
+    /* Add some space below the image */
+    border-radius: 50%;
+    /* Make the image round */
+    width: 225px;
+    /* Adjust the size as needed */
+    height: 225px;
+    /* Maintain the aspect ratio */
+    object-fit: cover;
+    /* Ensure the image covers the round shape */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 15px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
+
+
+h2 {
+    text-align: center;
+}
