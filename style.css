@@ -26,7 +26,7 @@ body {
 }
 
 .header-container {
-    background-color: rgb(80, 164, 236);
+    background-color: rgba(176, 173, 149, 255);
     color: rgb(37, 32, 32);
     height: 50px;
     display: flex;
@@ -358,4 +358,13 @@ h2 {
 
 h2 {
     text-align: center;
+}
+
+.smaller-image {
+    width: 50%;
+    /* Reduce the size to 50% */
+    display: block;
+    /* Ensure the image is a block element */
+    margin: 0 auto;
+    /* Center the image */
 }
