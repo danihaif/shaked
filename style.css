@@ -26,7 +26,7 @@ body {
 }
 
 .header-container {
-    background-color: rgba(176, 173, 149, 255);
+    background-color: rgb(241, 224, 195);
     color: rgb(37, 32, 32);
     height: 50px;
     display: flex;
@@ -41,7 +41,11 @@ body {
     max-width: 1200px;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 350px;
+    /* Rounded corners on all sides */
 }
+
+
 
 .hamburger {
     font-size: 24px;
