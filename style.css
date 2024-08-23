@@ -156,10 +156,9 @@ nav ul li a:hover {
 }
 
 .intro-section {
-    background-color: rgba(166, 122, 102, 0.7);
     color: white;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 20px;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -167,12 +166,12 @@ nav ul li a:hover {
 
 .intro-section h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 2.5em;
+    font-size: 5em;
     margin-bottom: 10px;
 }
 
 .intro-section p {
-    font-size: 1.2em;
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
@@ -181,7 +180,6 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-top: 20px; /* Try increasing this value */
     display: block;
-    padding-top: 20px; /* Adding padding to push the image down */
     margin: 0 auto; /* Center the image */
 }
 
@@ -363,7 +361,7 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 1.1em;
+    font-size: 1.5em;
     line-height: 1.6;
     color: rgb(61, 75, 76);
     text-align: center;
